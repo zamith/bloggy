@@ -1,18 +1,9 @@
 defmodule Content do
-  @moduledoc """
-  Documentation for Content.
-  """
+  def create_draft(article_attributes) do
+    %{article_id: 1}
+  end
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Content.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def find_article(article_id) do
+    %{article_id: 1}
   end
 end
