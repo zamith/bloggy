@@ -9,6 +9,6 @@ defmodule ContentTest do
       author: "Zamith",
     })
 
-    assert Content.find_article(draft.article_id) == draft
+    assert Content.find_draft(title: "Test Post") == draft
   end
 end
