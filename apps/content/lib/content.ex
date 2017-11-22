@@ -14,8 +14,6 @@ defmodule Content do
     )
 
     with :ok <- struct(CreateDraft, attrs) |> Router.dispatch(consistency: :strong) do
-      # TODO: Remove this once consistency strong works
-      Process.sleep 500
       {:ok, find_draft(title: attrs.title)}
     else
       reply -> reply

@@ -21,7 +21,8 @@ defmodule Bloggy.Content.Projections.Drafts do
 
     use Commanded.Event.Handler,
       name: "content_drafts",
-      start_from: :origin
+      start_from: :origin,
+      consistency: :strong
 
     def handle(%DraftCreated{article_id: article_id} = event, _meta) do
       persist_draft(event)
