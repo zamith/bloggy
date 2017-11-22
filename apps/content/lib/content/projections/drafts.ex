@@ -24,7 +24,7 @@ defmodule Bloggy.Content.Projections.Drafts do
       start_from: :origin,
       consistency: :strong
 
-    def handle(%DraftCreated{article_id: article_id} = event, _meta) do
+    def handle(%DraftCreated{article_id: _} = event, _meta) do
       persist_draft(event)
       :ok
     end
@@ -43,5 +43,10 @@ defmodule Bloggy.Content.Projections.Drafts do
   def find(title: title) do
     DraftProjection
     |> Repo.get_by(title: title)
+  end
+
+  def all do
+    DraftProjection
+    |> Repo.all
   end
 end

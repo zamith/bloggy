@@ -24,8 +24,12 @@ defmodule Content do
     Drafts.find(fields)
   end
 
+  def drafts do
+    Drafts.all
+  end
+
   defp author("Zamith") do
-    UUID.uuid4()
+    "1fb55181-e60c-46ee-8a3c-3d3168b9a54d"
   end
   defp author(_), do: nil
 end
