@@ -1,0 +1,4 @@
+ = for article <- @articles do
+   h1 = article.title
+
+   = raw Earmark.as_html!(article.body)
