@@ -1,0 +1,20 @@
+.Nav {
+  display: flex;
+}
+
+.Nav-item {
+  margin: 2px 10px 0 0;
+
+  a {
+    color: $color-header-subtitle;
+    font-size: $font-size-small;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-link-hover;
+    }
+  }
+}

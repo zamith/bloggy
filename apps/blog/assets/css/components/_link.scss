@@ -1,0 +1,14 @@
+.Link {
+  transition: color 0.25s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-link-hover;
+  }
+}
+
+.Link.title {
+  color: $color-header-title;
+  text-decoration: none;
+}

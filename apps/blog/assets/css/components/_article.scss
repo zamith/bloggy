@@ -1,0 +1,20 @@
+.Article {
+  margin-bottom: 80px;
+  border-bottom: 1px solid $color-light;
+}
+
+.Article-title {
+  margin-bottom: 40px;
+  font-family: $font-serif;
+  font-weight: $font-bold;
+  font-size: $font-size-large;
+  line-height: 56.24px;
+
+  color: $color-title;
+}
+
+.Article-body {
+  font-family: $font-sans-serif;
+
+  color: $color-text;
+}

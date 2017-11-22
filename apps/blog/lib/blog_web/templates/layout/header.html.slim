@@ -1,0 +1,16 @@
+.Header
+  .Header-info
+    h1.Header-title
+      = link("ZAMITH IN TECH", to: page_path(@conn, :index), class: "Link title")
+      span &nbsp;—&nbsp;
+      span.Header-subtitle a bunch of articles about things that I like
+
+    nav
+      ul.Nav
+        li.Nav-item = link("GitHub", to: "https://github.com/zamith")
+        li.Nav-item = link("Twitter", to: "https://twitter.com/zamith")
+        li.Nav-item = link("Presentations", to: "https://speakerdeck.com/zamith")
+        li.Nav-item = link("Newsletter", to: "https://news.zamith.pt")
+
+  .Header-picture
+    = img_tag("https://s.gravatar.com/avatar/6b36c1147f2037ac01ec2e182a5ae70d?s=200&d=retro&r=G", class: "avatar avatar-100 photo", height: 100, width: 100, originals: 100, scale: 2)

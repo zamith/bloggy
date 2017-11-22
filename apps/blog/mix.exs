@@ -42,7 +42,8 @@ defmodule Blog.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:phoenix_slime, "~> 0.8.0"},
+      {:phoenix_slime, git: "git@github.com:slime-lang/phoenix_slime.git"},
+      {:slime, "~> 1.1"},
       {:earmark, "~> 1.2.3"},
       {:content, in_umbrella: true},
     ]

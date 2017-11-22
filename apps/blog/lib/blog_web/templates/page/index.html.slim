@@ -1,4 +1,6 @@
- = for article <- @articles do
-   h1 = article.title
+= for article <- @articles do
+  article.Article
+    h1.Article-title = article.title
 
-   = raw Earmark.as_html!(article.body)
+    .Article-body
+      = raw Earmark.as_html!(article.body)
