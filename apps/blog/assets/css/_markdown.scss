@@ -288,6 +288,14 @@
   margin: 0;
 }
 
+.Article-body ul {
+  list-style-type: initial;
+}
+
+.Article-body ol {
+  list-style-type: initial;
+}
+
 .Article-body ul,
 .Article-body ol {
   padding-left: 0;
